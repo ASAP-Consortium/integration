@@ -1,0 +1,25 @@
+This document describes the directory layout expected for ASAP projects. 
+
+Please try to conform to this structure as much as possible. 
+Otherwise, if it is necessary to follow your structure, please describe it to your project descriptor.
+
+src/main/		        Project's source code
+src/main/resources 	Project's resources
+src/main/config 	  Main configuration files
+src/main/scripts 	  Project's main scripts
+src/test/		        Test sources
+src/test/resources 	Test resources
+target/		  	      Project's build output
+LICENSE.txt 		    Project's license
+NOTICE.txt 		      Notices and attributions required by libraries that the project depends on
+README.txt 		      Project's readme
+
+
+There are textual documents meant for the user, such as README.txt, LICENSE.txt, NOTICE.txt, etc.
+
+There are two main subdirectories: src/ and target/.
+
+The target directory is used for all output of the build.
+
+The src directory contains all of the necessary source code for building the project. 
+It contains a subdirectory for each type: main/ for the main build artifact and test/ for the unit test code.
